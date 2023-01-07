@@ -24,15 +24,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/funktionio/funktion/pkg/funktion"
-	"github.com/funktionio/funktion/pkg/k8sutil"
+	"github.com/muter3000/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/k8sutil"
 
 	"github.com/ghodss/yaml"
 	"github.com/spf13/cobra"
 
 	"k8s.io/client-go/1.5/dynamic"
 	"k8s.io/client-go/1.5/kubernetes"
-	"k8s.io/client-go/1.5/pkg/api/v1"
 	"k8s.io/client-go/1.5/pkg/runtime"
 )
 
@@ -427,7 +426,6 @@ func (p *installPackageCmd) isOpenShift() (bool, error) {
 	return true, nil
 }
 
-
 func (p *installPackageCmd) checkNamespaceExists() error {
 	name := p.namespace
 	namespaces := p.kubeclient.Namespaces()
@@ -465,42 +463,42 @@ func (p *installPackageCmd) installPackage(uri string, version string) error {
 	cmd.Stderr = os.Stderr
 	return cmd.Run()
 
-			/*
-				TODO try use the dynamic client
+	/*
+			TODO try use the dynamic client
 
-					list, err := loadList(uri)
-					if err != nil {
-				return err
-			}
-					resources, err := p.kubeclient.ServerResources()
-					if err != nil {
-						return err
+				list, err := loadList(uri)
+				if err != nil {
+			return err
+		}
+				resources, err := p.kubeclient.ServerResources()
+				if err != nil {
+					return err
+				}
+				resourceMap := map[string]*unversioned.APIResource{}
+				for _, ra := range resources {
+					for _, r := range ra.APIResources {
+						resourceMap[r.Kind] = &r
 					}
-					resourceMap := map[string]*unversioned.APIResource{}
-					for _, ra := range resources {
-						for _, r := range ra.APIResources {
-							resourceMap[r.Kind] = &r
+				}
+				client := p.dynamicClient
+				ns := p.namespace
+				count := 0
+				m := meta.NewAccessor()
+				for _, item := range list.Items {
+					u := runtime.Unknown{Raw: item.Raw}
+					kind := u.Kind
+					resource := resourceMap[kind]
+					if resource != nil {
+						_, err := client.Resource(resource, ns).Create()
+						if err != nil {
+							return err
 						}
+						count++
+					} else {
+						fmt.Printf("Could not find resource for kind %s\n", kind)
 					}
-					client := p.dynamicClient
-					ns := p.namespace
-					count := 0
-					m := meta.NewAccessor()
-					for _, item := range list.Items {
-						u := runtime.Unknown{Raw: item.Raw}
-						kind := u.Kind
-						resource := resourceMap[kind]
-						if resource != nil {
-							_, err := client.Resource(resource, ns).Create()
-							if err != nil {
-								return err
-							}
-							count++
-						} else {
-							fmt.Printf("Could not find resource for kind %s\n", kind)
-						}
-					}
-			fmt.Printf("Installed %d resources from version: %s\n", count, version)
+				}
+		fmt.Printf("Installed %d resources from version: %s\n", count, version)
 	*/
 }
 

@@ -27,9 +27,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/funktionio/funktion/pkg/config"
-	"github.com/funktionio/funktion/pkg/constants"
-	"github.com/funktionio/funktion/pkg/version"
+	"github.com/muter3000/funktion/pkg/config"
+	"github.com/muter3000/funktion/pkg/constants"
+	"github.com/muter3000/funktion/pkg/version"
+
+	"path/filepath"
 
 	"github.com/blang/semver"
 	"github.com/golang/glog"
@@ -39,7 +41,6 @@ import (
 	githubutils "github.com/minishift/minishift/pkg/util/github"
 	"github.com/spf13/viper"
 	pb "gopkg.in/cheggaaa/pb.v1"
-	"path/filepath"
 )
 
 const (

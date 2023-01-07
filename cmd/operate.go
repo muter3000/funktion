@@ -21,8 +21,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/funktionio/funktion/pkg/funktion"
 	"github.com/go-kit/kit/log"
+	"github.com/muter3000/funktion/pkg/funktion"
 
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"

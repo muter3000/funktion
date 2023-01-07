@@ -18,10 +18,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/funktionio/funktion/pkg/spec"
-	"github.com/ghodss/yaml"
 	"strings"
 	"unicode"
+
+	"github.com/ghodss/yaml"
+	"github.com/muter3000/funktion/pkg/spec"
 )
 
 func LoadConnectorSchema(yamlData []byte) (*spec.ConnectorSchema, error) {

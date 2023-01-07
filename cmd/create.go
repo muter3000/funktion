@@ -24,11 +24,9 @@ import (
 	"strings"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/funktionio/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/funktion"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-
-	"k8s.io/client-go/1.5/pkg/api/v1"
 )
 
 const (

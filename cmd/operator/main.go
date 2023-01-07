@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/funktionio/funktion/cmd"
+	"github.com/muter3000/funktion/cmd"
 )
 
 func Main() int {

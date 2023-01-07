@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/funktionio/funktion/pkg/spec"
+	"github.com/muter3000/funktion/pkg/spec"
 )
 
 const (

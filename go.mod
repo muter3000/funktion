@@ -1,0 +1,64 @@
+module github.com/muter3000/funktion
+
+go 1.19
+
+require (
+	github.com/PuerkitoBio/purell v1.1.0
+	github.com/PuerkitoBio/urlesc v0.0.0-20160726150825-5bd2802263f2
+	github.com/blang/semver v3.3.1-0.20161130084159-3a37c301dda6+incompatible
+	github.com/coreos/go-oidc v0.0.0-20170106232747-2b5d73091ea4
+	github.com/coreos/pkg v0.0.0-20161026222926-447b7ec906e5
+	github.com/davecgh/go-spew v1.1.0
+	github.com/fsnotify/fsnotify v1.4.3-0.20161026203122-fd9ec7deca8b
+	github.com/ghodss/yaml v0.0.0-20161207003320-04f313413ffd
+	github.com/go-kit/kit v0.3.0
+	github.com/go-logfmt/logfmt v0.3.0
+	github.com/go-openapi/jsonpointer v0.0.0-20170102174223-779f45308c19
+	github.com/go-openapi/jsonreference v0.0.0-20161105162150-36d33bfe519e
+	github.com/go-openapi/spec v0.0.0-20170102180923-3a0434164aa3
+	github.com/go-openapi/swag v0.0.0-20161226064331-96d7b9ebd181
+	github.com/go-stack/stack v1.5.2
+	github.com/gogo/protobuf v0.0.0-20160824171236-909568be09de
+	github.com/golang/protobuf v0.0.0-20160321223353-8d92cf5fc15a
+	github.com/google/go-github v2.0.1-0.20170105221610-dcda0b96bd59+incompatible
+	github.com/google/go-querystring v0.0.0-20160401233042-9235644dd9e5
+	github.com/google/gofuzz v0.0.0-20161122191042-44d81051d367
+	github.com/hashicorp/hcl v0.0.0-20170109002515-eb6f65b2d77e
+	github.com/howeyc/gopass v0.0.0-20161003130900-f5387c492211
+	github.com/imdario/mergo v0.0.0-20160517064435-50d4dbd4eb0e
+	github.com/inconshreveable/go-update v0.0.0-20160112193335-8152e7eb6ccf
+	github.com/inconshreveable/mousetrap v1.0.0
+	github.com/jonboulle/clockwork v0.1.1-0.20160907122059-bcac9884e750
+	github.com/jpillora/go-ogle-analytics v0.0.0-20161213085824-14b04e0594ef
+	github.com/juju/ratelimit v0.0.0-20151125201925-77ed1c8a0121
+	github.com/kardianos/osext v0.0.0-20160811001526-c2c54e542fb7
+	github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515
+	github.com/magiconair/properties v1.7.1-0.20161128003514-9c47895dc1ce
+	github.com/mailru/easyjson v0.0.0-20161212112359-9d6630dc8c57
+	github.com/mattn/go-runewidth v0.0.2-0.20161012013512-737072b4e32b
+	github.com/minishift/minishift v1.0.0-beta.1.0.20170109132103-5e8348841828
+	github.com/mitchellh/mapstructure v0.0.0-20161211222315-bfdb1a85537d
+	github.com/pborman/uuid v0.0.0-20161206184745-5007efa264d9
+	github.com/pelletier/go-buffruneio v0.1.0
+	github.com/pelletier/go-toml v0.4.1-0.20161229185104-439fbba1f887
+	github.com/pkg/browser v0.0.0-20160118053552-9302be274faa
+	github.com/pkg/errors v0.8.0
+	github.com/spf13/afero v0.0.0-20161226091939-90dd71edc4d0
+	github.com/spf13/cast v0.0.0-20161225125648-56a7ecbeb18d
+	github.com/spf13/cobra v0.0.0-20161229075922-1dd5ff2e11b6
+	github.com/spf13/jwalterweatherman v0.0.0-20170109133355-fa7ca7e836cf
+	github.com/spf13/pflag v0.0.0-20161214044949-25f8b5b07aec
+	github.com/spf13/viper v0.0.0-20161213093849-5ed0fc31f7f4
+	github.com/ugorji/go v0.0.0-20170107133203-ded73eae5db7
+	golang.org/x/crypto v0.0.0-20170107180030-c3b1d0d6d869
+	golang.org/x/net v0.0.0-20160322021652-4876518f9e71
+	golang.org/x/oauth2 v0.0.0-20160304213135-045497edb623
+	golang.org/x/sys v0.0.0-20161214190518-d75a52659825
+	golang.org/x/text v0.0.0-20170105193844-44f4f658a783
+	google.golang.org/appengine v1.0.1-0.20170106210242-8758a3858494
+	google.golang.org/cloud v0.0.0-20151119220103-975617b05ea8
+	gopkg.in/cheggaaa/pb.v1 v1.0.7
+	gopkg.in/inf.v0 v0.9.0
+	gopkg.in/yaml.v2 v2.0.0-20160928153709-a5b47d31c556
+	k8s.io/client-go v0.0.0-20161023202710-843f7c4f28b1
+)

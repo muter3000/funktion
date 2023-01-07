@@ -30,8 +30,8 @@ import (
 	"k8s.io/client-go/1.5/pkg/api"
 	"k8s.io/client-go/1.5/pkg/api/v1"
 
-	"github.com/funktionio/funktion/pkg/funktion"
-	"github.com/funktionio/funktion/pkg/spec"
+	"github.com/muter3000/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/spec"
 )
 
 const (

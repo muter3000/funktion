@@ -15,8 +15,9 @@
 package cmd
 
 import (
-	"github.com/funktionio/funktion/pkg/update"
 	"os"
+
+	"github.com/muter3000/funktion/pkg/update"
 
 	"github.com/spf13/cobra"
 )

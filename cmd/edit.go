@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/funktionio/funktion/pkg/funktion"
-	"github.com/funktionio/funktion/pkg/spec"
 	"github.com/magiconair/properties"
+	"github.com/muter3000/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/spec"
 	"github.com/spf13/cobra"
 
-	"k8s.io/client-go/1.5/kubernetes"
-	"k8s.io/client-go/1.5/pkg/api/v1"
 	"strconv"
+
+	"k8s.io/client-go/1.5/kubernetes"
 )
 
 type editConnectorCmd struct {

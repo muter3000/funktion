@@ -19,7 +19,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/funktionio/funktion/pkg/version"
+	"github.com/muter3000/funktion/pkg/version"
 )
 
 func init() {

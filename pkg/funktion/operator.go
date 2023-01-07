@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/funktionio/funktion/pkg/analytics"
-	"github.com/funktionio/funktion/pkg/queue"
+	"github.com/muter3000/funktion/pkg/analytics"
+	"github.com/muter3000/funktion/pkg/queue"
 
 	"strings"
 

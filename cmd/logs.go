@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/funktionio/funktion/pkg/k8sutil"
+	"github.com/muter3000/funktion/pkg/k8sutil"
 	"github.com/spf13/cobra"
 
 	"k8s.io/client-go/1.5/kubernetes"

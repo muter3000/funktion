@@ -23,7 +23,7 @@ import (
 const VersionPrefix = "v"
 
 // The current version of funktion
-// This is a private field and should be set when compiling with --ldflags="-X github.com/funktionio/funktion/pkg/version.version=vX.Y.Z"
+// This is a private field and should be set when compiling with --ldflags="-X github.com/muter3000/funktion/pkg/version.version=vX.Y.Z"
 var version = "v0.0.0-unset"
 
 func GetVersion() string {

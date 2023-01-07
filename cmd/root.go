@@ -23,9 +23,9 @@ import (
 	"k8s.io/client-go/1.5/pkg/api"
 	"k8s.io/client-go/1.5/tools/clientcmd"
 
-	"github.com/funktionio/funktion/pkg/config"
-	"github.com/funktionio/funktion/pkg/constants"
-	"github.com/funktionio/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/config"
+	"github.com/muter3000/funktion/pkg/constants"
+	"github.com/muter3000/funktion/pkg/funktion"
 
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"

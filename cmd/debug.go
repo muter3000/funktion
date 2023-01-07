@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/funktionio/funktion/pkg/funktion"
-	"github.com/funktionio/funktion/pkg/k8sutil"
+	"github.com/muter3000/funktion/pkg/funktion"
+	"github.com/muter3000/funktion/pkg/k8sutil"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"
 
